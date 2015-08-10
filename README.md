@@ -14,4 +14,4 @@ Para executar o projeto siga os seguintes passos:
 
 4. Voilá, tudo rodando
 
-Para mais informações acesse o [post em nosso blog](http://n4works.com/blog/expressjs-starter) .
+Para mais informações acesse o [post em nosso blog](http://n4works.com/blog/expressjs-starter).
