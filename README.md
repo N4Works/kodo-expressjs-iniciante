@@ -5,9 +5,10 @@ Nesse projeto é mostrado de forma bem simples como criar um WebService em NodeJ
 Será necessário ter o GIT e NodeJS instalados na máquina, caso não saiba como fazê-lo, acesso o nosso [blog] (http://n4works.com/blog) e saiba como.
 
 Para executar o projeto siga os seguintes passos:
-1. Acesse a pasta onde clonou o projeto
 
-2. Execute ```npm install```
+1. Acesse a pasta onde clonou o projeto no terminal ou prompt de comando
+
+2. Execute ```npm install``` no windows ou ```sudo npm install``` no Linux ou OSX
 
 3. Execute ```npm start```
 
