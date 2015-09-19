@@ -3,7 +3,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var server = express();
 var router = express.Router();
-var nomes = [];
+var nomes = new Array();
 router
     .route("/")
     .get(bodyParser.json({}), function (requisicao, resposta, proximo) { return resposta.status(200).json(nomes); });
@@ -21,6 +21,7 @@ var endpoint = "/hello-world";
 server.use(endpoint, router);
 server.listen(port, function () {
     var endereco = "http://localhost:3000";
-    console.log("Server rodando no endere\u00E7o " + endereco);
-    console.log("Execute o comando \"curl " + endereco + "/hello-world/\" para verificar a mensagem de retorno, ou acesse um navegador e entre com o endere\u00E7o.");
+    console.log("Servidor rodando no endere\u00E7o " + endereco);
+    console.log("Acesse o endere\u00E7o \"" + endereco + "/hello-world/<nome>\" para inserir um nome no centro Hello-World.");
+    console.log("Acesse o endere\u00E7o \"" + endereco + "/hello-world/\" para obter os nomes cadastrados no centro.");
 });

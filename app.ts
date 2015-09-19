@@ -8,7 +8,7 @@ var server: express.Application = express();
 // Obtém o objeto necessário para criação de rotas
 var router: express.Router = express.Router();
 
-var nomes = [];
+var nomes:Array<string> = new Array<string>();
 
 // Implementa a rota relativa "/" com o método "GET"
 router
@@ -52,6 +52,7 @@ server.use(endpoint, router);
 server.listen(port, () => {
     // Ao subir o servidor, exibo as mensagens abaixo no terminal
     var endereco: string = "http://localhost:3000";
-    console.log(`Server rodando no endereço ${endereco}`);
-    console.log(`Execute o comando \"curl ${endereco}/hello-world/\" para verificar a mensagem de retorno, ou acesse um navegador e entre com o endereço.`);
+    console.log(`Servidor rodando no endereço ${endereco}`);
+    console.log(`Acesse o endereço "${endereco}/hello-world/<nome>" para inserir um nome no centro Hello-World.`);
+    console.log(`Acesse o endereço "${endereco}/hello-world/" para obter os nomes cadastrados no centro.`);
 });
